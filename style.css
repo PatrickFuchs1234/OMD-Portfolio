@@ -327,12 +327,17 @@ nav a:hover {
 /* Miscelaneous elements  */
 
 
-/* -------------------- Page Name  ------------------------------------- */
+/* -------------------- Hompage  ------------------------------------- */
 
+/* ----------Section Timeline--------- */
 
+.border-r{
+  border-right: 1px solid var(--dark);
+}
 
-
-
+hr {
+  
+}
 
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 

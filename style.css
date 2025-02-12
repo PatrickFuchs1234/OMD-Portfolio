@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;  
-    border: 1px solid #71db53;
+    /* border: 1px solid #71db53; */
 }
   
 img { max-width: 100%; height: auto; }
@@ -38,29 +38,39 @@ section {
 body {
   font-family: 'Taviraj', serif;  /* Add your font here */ 
   color: var(--dark-text);
-  max-width: 1000px; margin: auto;
 }
 
 h1, h2{ 
   font-family: 'Antic Didone';
-  line-height: 1.1;
   margin-bottom: 1.2rem;
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   font-family: 'Montserrat';
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 1.2rem;
 }
 
-h1 {  font-size: 3.8rem; 
+h1 {  font-size: 7rem; 
       font-weight: 200;
-      text-transform: uppercase;}
-h2 { font-size: 3rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.6rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.8rem; 
+      text-transform: uppercase;
+      line-height: 1.2;}
+h2 { font-size: 4rem; 
+     text-transform: uppercase;
+     line-height: 1.1;}
+h3 { font-size: 2.2rem; 
+     font-family: 'Montserrat';
+     line-height: 1.3;
+     text-transform: uppercase;
+     margin-bottom: 1.2rem;
+     transform: scaleY(1.1);
+     letter-spacing: 0.8;}
+h4 { font-size: 1.2rem; 
+     text-transform: uppercase;}
+h5 { font-size: 0.8rem;
+  font-weight: 400; 
+     text-transform: uppercase;}
+h6 { font-size: 0.6rem; 
      font-weight: 200;
      text-transform: uppercase;
 }
@@ -70,7 +80,7 @@ p, li {
   margin-bottom: 1rem;
   font-family: 'Taviraj', serif; 
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 h2:last-child, 
@@ -145,11 +155,24 @@ p a:hover {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
-.bg-image {
-    background-color: var(--light); /* Set a fall-back color while images are loading */ 
-    background-size: cover;
+.bg-image-icons {
+    background-size: 70%;
     background-position: center; 
     background-repeat: no-repeat;
+}
+
+.bg-image {
+  background-color: var(--light); /* Set a fall-back color while images are loading */ 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.img-head{
+  background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
+  width: 20rem;
+  height: 15rem;
+  z-index: 0;
 }
 
 /* Aspect Ratios */
@@ -205,13 +228,16 @@ p a:hover {
   overflow: hidden;
 }
 
-.overlay {
+.overlay-head {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
+  left: 44%;
+  top: 80%;
+  bottom: 0;
   text-align: left;
+  z-index: 1;
 }
+
+.zind5{ z-index: 5;}
 
 /* ------------------ Header & Hamburger Menu ---------------------- */
 header {
@@ -317,10 +343,10 @@ nav a:hover {
               
 input, textarea {
   border-style: solid;
-  border: 2px solid rgb(200, 200, 205);
-  padding: 0.8em;
+  border: 1px solid var(--dark);
   display: block;
   width: 100%;
+  font-family: 'Taviraj', serif;
   font-size: 1rem;
   vertical-align: top;
 }
@@ -328,7 +354,7 @@ input, textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border: 2px solid #e67e22;
+  border: 2px solid var(--featured);
   /* featured color */
 }
 
@@ -341,49 +367,27 @@ input[type="submit"] {
   display: block;
 }
 
-.email-signup input {
-  width: 30%;
-  display: inline-block;
-  max-width: 250px;
-  margin-top:1rem;
-}
-
-.email-signup .button-solid {
-  padding: 0.8em;
-  border-radius: 0;
-  font-size: 1rem;
-}
 form .button {
-  width:100%;
+  border: 2px solid var(--dark);
+  background: var(--dark);
+  color: var(--light-text);
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  float: right;
 }
-  @media(max-width:768px) {
-   .email-signup input {
-     width: 100%;
-     max-width: 100%;
-   }
- }
 
-/* --------------------- Blogging elements  ---------------------------- */
-
-/* Post Loop Item  */
-
-/* Individual Elements */
-
-/* Individual Blog Post Pages  */
-
-/* Sidebar */
-
-/* Social Share Nav  */
-
-/* Miscelaneous elements  */
-
+form .button:hover {
+  border: 2px solid var(--featured);
+}
 
 /* -------------------- Hompage  ------------------------------------- */
 
 /* ----------Section Timeline--------- */
 
 .border-r{
-  border-right: 1px solid var(--dark);
+  border-right: 2px solid var(--dark);
 }
 
 hr {
@@ -415,32 +419,34 @@ hr {
   position: absolute;
   left: 1.5rem;
   top: auto;
-  bottom: 0;
+  bottom: 1rem;
   width: 100vh; /* Gleiche Breite wie die Höhe der Section */
   text-align: left;
 }
 
 .overlay-ro {
   position: absolute;
-  right: 0rem;
+  right: 0.5rem;
   top: 7rem;
   text-align: left;
 }
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
 
-.capped-width-wide      { max-width: 1600px; margin: auto; }
-.capped-width           { max-width: 1200px; margin: auto; }
-.capped-width-narrow    { max-width: 1000px; margin: auto; }
-.capped-width-v-narrow  { max-width: 800px;  margin: auto; }
+.capped-width-wide      { max-width: 1400px; margin: auto; }
+.capped-width           { max-width: 1000px; margin: auto; }
+.capped-width-narrow    { max-width: 800px; margin: auto; }
+.capped-width-v-narrow  { max-width: 600px;  margin: auto; }
 
-
+.vh110 { min-height: 110vh;}
 .vh100 { min-height: 100vh;}
 .vh90  { min-height: 90vh; }
 .vh80  { min-height: 80vh; }
 .vh70  { min-height: 70vh; }
 .vh60  { min-height: 60vh; }
 .vh50  { min-height: 50vh; }
+.vh40  { min-height: 40vh; }
+.vh30  { min-height: 30vh; }
 
 /* Padding Utility Classes */ 
 .padded-sm { padding: 2.5%; }
@@ -496,13 +502,18 @@ hr {
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
 
+.margin-b-5 { margin-bottom: 5rem; }
+
 .margin-t-0 { margin-top: 0; }
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
 .margin-r-0 { margin-right: 0; }
 
 .margin-b-neg {  margin-bottom: -1rem;  z-index: 10;}
+.margin-b-neg-3 {  margin-bottom: -3rem;  z-index: 10;}
 .margin-r-neg {  margin-right: -1rem;  z-index: 10;}
+
+.margin-t-big {margin-top: 16%;}
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }

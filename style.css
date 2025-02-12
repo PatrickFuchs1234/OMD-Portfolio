@@ -38,6 +38,7 @@ section {
 body {
   font-family: 'Taviraj', serif;  /* Add your font here */ 
   color: var(--dark-text);
+  max-width: 1000px; margin: auto;
 }
 
 h1, h2{ 
@@ -55,10 +56,10 @@ h3, h4, h5, h6 {
 h1 {  font-size: 3.8rem; 
       font-weight: 200;
       text-transform: uppercase;}
-h2 { font-size: 2rem; }
+h2 { font-size: 3rem; }
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.6rem; }
-h5 { font-size: 1.4rem; }
+h5 { font-size: 1rem; }
 h6 { font-size: 0.8rem; 
      font-weight: 200;
      text-transform: uppercase;
@@ -196,18 +197,20 @@ p a:hover {
 
 /* overlay one element above the other in the head section */
 
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
+.main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  top: 0;
+  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
+  text-align: left;
 }
 
 /* ------------------ Header & Hamburger Menu ---------------------- */
@@ -310,7 +313,55 @@ nav a:hover {
 
 /* ------------------------- Contact Forms  --------------------------- */
 
+            
+              
+input, textarea {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+}
 
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #e67e22;
+  /* featured color */
+}
+
+textarea {
+  min-height: 7em;
+}
+
+input[type="submit"] {
+  width: auto;
+  display: block;
+}
+
+.email-signup input {
+  width: 30%;
+  display: inline-block;
+  max-width: 250px;
+  margin-top:1rem;
+}
+
+.email-signup .button-solid {
+  padding: 0.8em;
+  border-radius: 0;
+  font-size: 1rem;
+}
+form .button {
+  width:100%;
+}
+  @media(max-width:768px) {
+   .email-signup input {
+     width: 100%;
+     max-width: 100%;
+   }
+ }
 
 /* --------------------- Blogging elements  ---------------------------- */
 
@@ -336,9 +387,45 @@ nav a:hover {
 }
 
 hr {
-  
+    border: none;
+    border: 1px solid var(--dark);
 }
 
+/* ----------Section Banner--------- */
+
+.text-turn-270{
+  transform: rotate(270deg); 
+  transform-origin: left bottom;
+}
+
+.text-turn-90{
+  transform: rotate(90deg); 
+  transform-origin: right top;
+}
+
+.main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay-lu {
+  position: absolute;
+  left: 1.5rem;
+  top: auto;
+  bottom: 0;
+  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
+  text-align: left;
+}
+
+.overlay-ro {
+  position: absolute;
+  right: 0rem;
+  top: 7rem;
+  text-align: left;
+}
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
 
@@ -413,6 +500,9 @@ hr {
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
 .margin-r-0 { margin-right: 0; }
+
+.margin-b-neg {  margin-bottom: -1rem;  z-index: 10;}
+.margin-r-neg {  margin-right: -1rem;  z-index: 10;}
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }

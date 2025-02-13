@@ -20,13 +20,14 @@ section {
 /* ------------------------ CSS Variables ------------------------------- */
 :root {
   --dark: #112c36;
-  --featured: lightblue;
-  --medium: rgb(70, 178, 236);
-  --light: #c8e8f4;
+  --featured: #284177;
+  --medium: #006BBD;
+  --light: #CCDAE0;
   --v-light: #ebfafe;
-  --light-text: #fff;
-  --featured-text: lightblue;
+  --light-text: #EDE8E4;
+  --featured-text: #284177;
 }
+
 
 /* ---------------------- Typography Styles ----------------------------- */
 .left    { text-align: left; }
@@ -111,6 +112,7 @@ p:last-child {
 /* ------------------------ Buttons & Links ------------------------ */
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
@@ -166,12 +168,13 @@ p a:hover {
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
+  position: relative; /* Wichtig, damit das Overlay sich daran ausrichtet für bg-overlay*/
 }
 
 .img-head{
   background-color: var(--v-light); /* Set a fall-back color while images are loading */ 
-  width: 20rem;
-  height: 15rem;
+  width: 15rem;
+  height: 20rem;
   z-index: 0;
 }
 
@@ -199,7 +202,7 @@ p a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.55);
 }
 
 
@@ -214,8 +217,18 @@ p a:hover {
 } 
 
 .bg-overlay-featured::after { 
-  background-color: var(--featured);
+  background-color: var(--light-text);
   opacity: 0.5;
+}
+
+.bg-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Unter den Inhalt, aber über das Bild */
 }
 
 /* overlay one element above the other in the head section */
@@ -230,9 +243,8 @@ p a:hover {
 
 .overlay-head {
   position: absolute;
-  left: 44%;
-  top: 80%;
-  bottom: 0;
+  left: 54%;
+  top: 16%;
   text-align: left;
   z-index: 1;
 }
@@ -395,6 +407,14 @@ hr {
     border: 1px solid var(--dark);
 }
 
+bg-size-50{
+  background-size: 50%;
+}
+
+bg-size-80{
+  background-size: 80%;
+}
+
 /* ----------Section Banner--------- */
 
 .text-turn-270{
@@ -417,7 +437,7 @@ hr {
 
 .overlay-lu {
   position: absolute;
-  left: 1.5rem;
+  left: 2.2rem;
   top: auto;
   bottom: 1rem;
   width: 100vh; /* Gleiche Breite wie die Höhe der Section */
@@ -429,6 +449,16 @@ hr {
   right: 0.5rem;
   top: 7rem;
   text-align: left;
+}
+
+.a-banner{
+  font-family: 'Montserrat';
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 400; 
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
@@ -502,6 +532,7 @@ hr {
 .margin-l-2 { margin-left: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
 
+.margin-t-3 { margin-top: 3rem; }
 .margin-b-5 { margin-bottom: 5rem; }
 
 .margin-t-0 { margin-top: 0; }
@@ -513,7 +544,7 @@ hr {
 .margin-b-neg-3 {  margin-bottom: -3rem;  z-index: 10;}
 .margin-r-neg {  margin-right: -1rem;  z-index: 10;}
 
-.margin-t-big {margin-top: 16%;}
+.margin-t-big {margin-top: 18%;}
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
@@ -565,11 +596,19 @@ hr {
   .sm-padded-b-0 { padding-bottom: 0; }
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-b-1 { margin-bottom: 1rem; }
+  .sm-margin-t-neg3 { margin-top: -3rem; }
 
   .sm-landscape     { padding-bottom: 66% ; }
   .sm-portrait-tall { padding-bottom: 175%; }
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
+
+  h1{ font-size: 5rem; }
+  h2{ font-size: 3rem;}
+  h4{ font-size: 1rem;}
+
+  .sm-vh60{ min-height: 60vh;}
 
 }
 
@@ -581,8 +620,18 @@ hr {
 		.xs-show { display: block; }
 		.xs-hide { display: none;  }
 
+    .xs-padded     { padding: 5%; }
+    .xs-padded-1   { padding: 1rem; }
+    .xs-padded-05  { padding: 0.5rem; }
+
     .xs-subtle-heading {
       font-weight: 300;
       font-family: 'Martel', serif; 
     }
+
+    h1{ font-size: 3.5rem; }
+    h2{ font-size: 2.5rem;}
+    h4{ font-size: 1rem;}
+
+    .sm-vh40{ min-height: 40vh;}
 }

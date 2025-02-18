@@ -97,9 +97,9 @@ p:last-child {
 .emphasis       { font-size: 1.2rem; }
 .featured-text  { color: var(--featured-text);}
 .light-text     { color: var(--light-text);}
-.subtle         { opacity: 0.8;     }
-.subtitle       { font-size: 0.8rem; }
-.copyright      { font-size: 0.9rem; opacity: 0.8; margin-top: 3rem;}
+.subtle         { opacity: 0.8; margin-bottom: 0.2rem; }
+.subtitle       { font-size: 0.9rem; font-weight: 300;}
+.copyright     { opacity: 0.8; font-size: 0.9rem; text-decoration: none; padding: 0 5%;}
 
 /* Gridlex Flip Flex */
 

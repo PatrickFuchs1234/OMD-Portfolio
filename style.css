@@ -71,7 +71,7 @@ h4 { font-size: 1.2rem;
 h5 { font-size: 0.8rem;
   font-weight: 400; 
      text-transform: uppercase;}
-h6 { font-size: 0.6rem; 
+h6 { font-size: 0.8rem; 
      font-weight: 200;
      text-transform: uppercase;
 }
@@ -81,7 +81,7 @@ p, li {
   margin-bottom: 1rem;
   font-family: 'Taviraj', serif; 
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 h2:last-child, 
@@ -137,12 +137,17 @@ p a:hover {
 }
 
 .button:hover {
-    color: var(--featured-text);
+  background-color: var(--v-light);
+  color: var(--featured);
 }
 
 .subtle-button {
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+.social-icons{
+  font-size: 1.5rem;
 }
 
 /* suggested additional styles 
@@ -217,7 +222,7 @@ p a:hover {
 } 
 
 .bg-overlay-featured::after { 
-  background-color: var(--light-text);
+  background-color: var(--light);
   opacity: 0.5;
 }
 
@@ -252,9 +257,9 @@ p a:hover {
 .zind5{ z-index: 5;}
 
 /* ------------------ Header & Hamburger Menu ---------------------- */
-header {
+/* header {
     padding: 1rem 5%;
-}
+} */
 
 nav a {
     padding: 0.25rem 0.5rem;
@@ -270,7 +275,6 @@ nav a:hover {
   text-decoration: none;
   font-size: 2.5rem;
 } 
-
 
 /* Dropdown styles */
 
@@ -350,7 +354,6 @@ nav a:hover {
 
 
 /* ------------------------- Contact Forms  --------------------------- */
-
             
               
 input, textarea {
@@ -392,6 +395,140 @@ form .button {
 
 form .button:hover {
   border: 2px solid var(--featured);
+}
+
+/* ------------ Markdown Styles -------------  */
+
+.md-style h1 {
+  font-weight: 200;
+  font-size: 3.5rem;
+  text-transform: none;
+}
+
+/* nicht verändern */
+.md-style h2 {
+  font-size: 2.4rem;
+  margin-top: 1.8rem;
+  text-transform: none;
+}
+
+/* nicht verändern */
+.md-style h3 {
+  font-size: 2rem;
+  text-transform: none;
+}
+
+/* nicht verändern */
+.md-style h4 {
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  text-transform: none;
+}
+
+/* für listen */
+.md-style h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.md-style h6 {
+  font-size: 1.1rem;
+  text-transform: none;
+}
+
+.md-style p {
+  line-height: 1.6;
+}
+
+.md-style hr {
+  margin: 5% 0;
+  border: none;
+  border: 1px solid #595946;
+}
+
+.md-style li{
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin-right: 5rem;
+}
+
+/* ------------ Cookie banner Styles  ----------------------- */
+
+#cookie-notice {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  width: calc(100% - 2rem);
+  background: var(--featured);
+  color: var(--v-light);
+  min-height: 30%;
+  z-index: 100;
+}
+
+#cookie-notice p {
+  font-size: 0.8rem;
+  line-height: 1.1;
+  padding: 1% 5%;
+}
+
+#cookie-notice h4{
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  text-transform: none;
+}
+
+#cookie-notice a {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+#cookie-notice .privacy a {
+  font-size: 0.7rem;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: var(--light);
+}
+
+#cookie-notice .privacy a:hover {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: var(--light);
+}
+
+#cookie-notice .button-subtle {
+  opacity: 0.8;
+}
+
+#cookie-banner-datenschutz{
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.reshow-button {
+  background-color: #faf6fc;
+  position: fixed;
+  bottom: -0.3rem;
+  right: 0.1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+  cursor: pointer;
+}
+
+.hide-button.reshow-button {
+  display:block;
+  position: fixed;
+  right: 0.1rem;
 }
 
 /* -------------------- Hompage  ------------------------------------- */
@@ -461,6 +598,12 @@ bg-size-80{
   text-transform: uppercase;
 }
 
+/* ------- Footer Styles --------- */
+
+#footer h4{
+  margin: 0;
+}
+
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
 
 .capped-width-wide      { max-width: 1400px; margin: auto; }
@@ -493,6 +636,7 @@ bg-size-80{
 .padded-r  { padding-right: 5%; }
 
 .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-tb-0  { padding-top: 0%; padding-bottom: 0%; }
 .padded-lr  { padding-left: 5%; padding-right: 5%; }
 
 .padded-t-1 { padding-top: 1rem; }
@@ -608,6 +752,7 @@ bg-size-80{
   h2{ font-size: 3rem;}
   h4{ font-size: 1rem;}
 
+  .sm-vh80{ min-height: 80vh;}
   .sm-vh60{ min-height: 60vh;}
 
 }

@@ -598,6 +598,15 @@ bg-size-80{
   text-transform: uppercase;
 }
 
+.overlay-banner2 {
+  position: absolute;
+  left: 1.8rem;
+  top: auto;
+  bottom: 1rem;
+  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
+  text-align: left;
+}
+
 /* ------- Footer Styles --------- */
 
 #footer h4{
@@ -718,6 +727,8 @@ bg-size-80{
 	.md-show { display: block; }
 	.md-hide { display: none;  }
 
+  h1{ font-size: 6rem;}
+
 }
 
 /* ------------------- SM Media Query (48em / 768px) --------------- */ 
@@ -741,6 +752,7 @@ bg-size-80{
   .sm-padded-b-0 { padding-bottom: 0; }
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-t-1 {margin-top: 1rem;}
   .sm-margin-b-1 { margin-bottom: 1rem; }
   .sm-margin-t-neg3 { margin-top: -3rem; }
 
@@ -749,13 +761,16 @@ bg-size-80{
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
-  h1{ font-size: 5rem; }
+  h1{ font-size: 4.5rem;}
   h2{ font-size: 3rem;}
   h4{ font-size: 1rem;}
 
+  .sm-vh90{ min-height: 90vh;}
   .sm-vh80{ min-height: 80vh;}
   .sm-vh60{ min-height: 60vh;}
   .sm-vh50{ min-height: 50vh;}
+  .sm-vh40{ min-height: 40vh;}
+
 }
 
 /* ---------------- XS Media Query (36em / 576px) ------------------- */ 
@@ -766,23 +781,29 @@ bg-size-80{
 		.xs-show { display: block; }
 		.xs-hide { display: none;  }
 
-    .xs-padded     { padding: 5%; }
+    .xs-padded     { padding: 7%; }
     .xs-padded-1   { padding: 1rem; }
     .xs-padded-05  { padding: 0.5rem; }
+
+    .xs-padded-t10 {padding-top: 10%;}
 
     .xs-subtle-heading {
       font-weight: 300;
       font-family: 'Martel', serif; 
     }
 
-    h1{ font-size: 3.2rem; }
+    h1{ font-size: 3rem; }
     h2{ font-size: 2.5rem;}
     h3{ font-size: 1.8rem;}
     h4{ font-size: 1rem;}
+    h5{ font-size: 0.6rem;}
+    h6{ font-size: 0.5rem;}
 
-    .sm-vh40{ min-height: 40vh;}
+    p{  font-size: 0.8rem;}
 
     .xs-border-b {
       border-bottom: 2px solid var(--dark);
     }
+
+    .xs-vh30{ min-height: 30vh;}
 }

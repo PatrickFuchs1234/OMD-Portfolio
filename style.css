@@ -400,6 +400,7 @@ form .button:hover {
 /* ------------ Markdown Styles -------------  */
 
 .md-style h1 {
+  font-family: 'Montserrat';
   font-weight: 200;
   font-size: 3.5rem;
   text-transform: none;
@@ -407,6 +408,7 @@ form .button:hover {
 
 /* nicht verändern */
 .md-style h2 {
+  font-family: 'Montserrat';
   font-size: 2.4rem;
   margin-top: 1.8rem;
   text-transform: none;
@@ -752,7 +754,7 @@ bg-size-80{
   .sm-padded-b-0 { padding-bottom: 0; }
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
-  .sm-margin-t-1 {margin-top: 1rem;}
+  .sm-margin-t-1 {margin-top: 1rem; }
   .sm-margin-b-1 { margin-bottom: 1rem; }
   .sm-margin-t-neg3 { margin-top: -3rem; }
 

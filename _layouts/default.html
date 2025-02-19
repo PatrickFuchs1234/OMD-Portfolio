@@ -8,7 +8,30 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
+    <!------------ SEO Metadata  --------------------------------->
+    <title> {{page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+    <meta name="description" content="{{page.seo.description | default: site.data.site-settings.seo.description }}">
+    <meta name="keywords" content="{{page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
+
+    {% if page.seo.hide-from-google == true %}
+        <meta name="robots" content="noindex, nofollow">
+    {% else %}
+        <meta name="robots" content="index, follow">
+    {% endif %}
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/icons/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/icons/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="OMDesign." />
+    <link rel="manifest" href="/images/icons/favicon/site.webmanifest" />
+
     <!------------ External Stylesheets  ------------>
+
+    <!-- Viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">

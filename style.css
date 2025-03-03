@@ -356,21 +356,24 @@ nav a:hover {
 /* ------------------------- Contact Forms  --------------------------- */
             
               
-input, textarea {
+form input, 
+form textarea {
   border-style: solid;
-  border: 1px solid var(--dark);
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--dark);
+  border-radius: 5px;
   display: block;
   width: 100%;
   font-family: 'Taviraj', serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   vertical-align: top;
 }
 
-input:focus,
-textarea:focus {
+form input:focus,
+form textarea:focus {
   outline: none;
-  border: 2px solid var(--featured);
-  /* featured color */
+  border-color: var(--featured);
 }
 
 textarea {
@@ -380,6 +383,13 @@ textarea {
 input[type="submit"] {
   width: auto;
   display: block;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: var(--featured);
+  font-weight: bold;
 }
 
 form .button {
@@ -467,10 +477,9 @@ form .button:hover {
   padding: 2rem;
   text-align: center;
   position: fixed;
-  left: 1rem;
-  right: 1rem;
-  bottom: 0;
-  width: calc(100% - 2rem);
+  left: 52rem;
+  bottom: 0.5rem;
+  width: 30%;
   background: var(--featured);
   color: var(--v-light);
   min-height: 30%;
@@ -496,17 +505,17 @@ form .button:hover {
 }
 
 #cookie-notice .privacy a {
+  padding-top: 1rem;
   font-size: 0.7rem;
   display: inline-block;
   cursor: pointer;
-  margin-left: 0.5rem;
+  margin: 0rem;
   color: var(--light);
 }
 
 #cookie-notice .privacy a:hover {
   display: inline-block;
   cursor: pointer;
-  margin-left: 0.5rem;
   color: var(--light);
 }
 
@@ -557,6 +566,11 @@ bg-size-50{
 
 bg-size-80{
   background-size: 80%;
+}
+
+.icon{
+  font-size: 4.5rem;
+
 }
 
 /* ----------Section Banner--------- */
@@ -705,7 +719,11 @@ bg-size-80{
 .margin-b-neg-3 {  margin-bottom: -3rem;  z-index: 10;}
 .margin-r-neg {  margin-right: -1rem;  z-index: 10;}
 
+.margin-t-lg { margin-top: 10%; }
+.margin-t-xl { margin-top: 15%; }
 .margin-t-big {margin-top: 18%;}
+
+.margin-b-lg { margin-bottom: 10%; }
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }

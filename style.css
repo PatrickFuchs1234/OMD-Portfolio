@@ -23,7 +23,7 @@ section {
   --featured: #284177;
   --medium: #006BBD;
   --light: #CCDAE0;
-  --v-light: #ebfafe;
+  --v-light: #f1f5f6;
   --light-text: #EDE8E4;
   --featured-text: #284177;
 }
@@ -693,6 +693,72 @@ bg-size-80{
   text-align: left;
 }
 
+/* Typography Styles */
+.caption {
+  font-family: Georgia; 
+  font-size: 0.9rem;
+  color: rgb(90,90,90);
+  margin-top: 0.5rem;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Background Image Styles  */
+
+.bg-houdini {
+    background-image:url('https://www.instituteofcode.com/houdini.jpg');
+}
+
+/* Slider */
+.slider-container {
+  padding: 5%;
+}
+
+.slider-item {
+  padding: 0.25rem;
+  display: none;
+}
+
+.slider-item:first-child {
+  display: block;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next::before, .slick-prev::before {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(90,90,90);
+}
+
+.slick-dots {
+  left: 0;
+  bottom: 10px;
+  /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+}
+
+.slick-dots li,
+.slick-dots li button {
+  width: 10px;
+}
+
+.slick-dots li button::before {
+  color: teal;
+}
+
+.slick-dots li.slick-active button::before {
+  color: teal; 
+}
+
+
 /* ------- Footer Styles --------- */
 
 #footer h4{
@@ -862,6 +928,12 @@ bg-size-80{
   .sm-vh60{ min-height: 60vh;}
   .sm-vh50{ min-height: 50vh;}
   .sm-vh40{ min-height: 40vh;}
+
+
+  .slick-prev {left: -10px; }
+  .slick-next {right: -10px; }
+  .slick-dots { bottom: -10px; }
+  
 
 }
 

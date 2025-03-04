@@ -217,47 +217,31 @@ seo:
 <!----------------------- Contact Form ----------------------------->
             
               
-<section class="padded xs-padded capped-width">
+<section class="padded xs-padded-lg capped-width">
 
   <div class="padded center">
     <h2> Write us a Message ... </h2>
   </div>
 
-  <div class="grid xs-padded">
-    <div class="col-5_xs-12 padded-r padded-b">
+    <div class="padded">
       <p> Have a project in mind or a question? Drop us a line! Fill out the form below to send us a message. We'll respond promptly to discuss how we can collaborate and achieve your goals together.</p>
-      <p><strong> Email: </strong><a href="mailto:hello@onememorydesign.com">hello@onememorydesign.com </a></p>
+      <!-- <p><strong> Email: </strong><a href="mailto:hello@onememorydesign.com">hello@onememorydesign.com </a></p> -->
       <!-- <p> <strong> Phone: </strong> 0412 555 555 </p> -->
     </div>
     
-    <form class="col-7_xs-12" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="padded-lg" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       
-      <div class="grid">
-        <!-- Vorname & Nachname -->
-        <div class="col-12 grid">
-          <input type="text" name="first_name" placeholder="First Name">
-        </div>
+      <!-- <label for="_name"> Dein Name </label> -->
+      <input type="text" name="_name" id="_name" placeholder="Name" />
 
-        <!-- E-Mail & Betreff -->
-        <div class="col-12 grid">
-          <div class="col-6">
-            <input type="email" name="_replyto" placeholder="E-Mail" class="">
-          </div>
-          <div class="col-6">
-            <input type="text" name="subject" placeholder="Subject" class="">
-          </div>
-        </div>
+      <!-- <label for="_replyto"> Deine Email-Adresse </label> -->
+      <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
 
-        <!-- Nachricht -->
-        <div class="col-12">
-          <textarea name="message" placeholder="Hey, I want to work with you..." class="padded"></textarea>
-        </div>
-      </div>
-      <div class="">
-        <input type="submit" value="SUBMIT" class="button">
-      </div>
+      <!-- <label for="message"> Deine Nachricht </label> -->
+      <textarea name="message" id="message" placeholder="Hey, I'd love to work with you..."></textarea>
+
+      <button class="button" type="submit"> SUBMITT </button>
     </form>
-  </div>
 </section>
 
 <!----------------------- Footer ----------------------------->

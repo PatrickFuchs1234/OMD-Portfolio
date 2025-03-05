@@ -68,10 +68,10 @@ h3 { font-size: 2.2rem;
      letter-spacing: 0.8;}
 h4 { font-size: 1.2rem; 
      text-transform: uppercase;}
-h5 { font-size: 0.6rem;
+h5 { font-size: 0.9rem;
      font-weight: 300; 
      text-transform: uppercase;}
-h6 { font-size: 0.8rem; 
+h6 { font-size: 1rem; 
      font-weight: 300;
      text-transform: uppercase;
 }
@@ -80,8 +80,8 @@ p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
   font-family: 'Taviraj', serif; 
-  font-weight: 200;
-  font-size: 0.9rem;
+  font-weight: 100;
+  font-size: 1.1rem;
 }
 
 h2:last-child, 
@@ -669,8 +669,8 @@ bg-size-80{
 
 .overlay-ro {
   position: absolute;
-  right: 0.5rem;
-  top: 7rem;
+  right: 0.9rem;
+  top: 7.2rem;
   text-align: left;
 }
 
@@ -819,6 +819,8 @@ bg-size-80{
 
 /* Margin Utility Classes */ 
 
+.margin-0 {margin: 0;}
+
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
 .margin-l { margin-left: 5%; }
@@ -903,6 +905,7 @@ bg-size-80{
   .sm-text-right  { text-align: right; }
 
   .sm-padded     { padding: 5%; }
+  .sm-padded-0     { padding: 0%; }
   .sm-padded-1   { padding: 1rem; }
   .sm-padded-05  { padding: 0.5rem; }
 

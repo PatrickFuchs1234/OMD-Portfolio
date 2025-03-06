@@ -891,6 +891,57 @@ bg-size-80{
   .order-1 {order: 2;}
   .order-2 {order: 1;}
 
+/* Markdown - Styles */
+.md-style h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+/* nicht verändern */
+.md-style h2 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 1.8rem;
+  text-transform: none;
+}
+
+/* nicht verändern */
+.md-style h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: none;
+}
+
+/* nicht verändern */
+.md-style h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  text-transform: none;
+}
+
+/* für listen */
+.md-style h5 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.md-style h6 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-transform: none;
+}
+
+.md-style p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
 }
 
 /* ---------------- XS Media Query (36em / 576px) ------------------- */ 
@@ -938,5 +989,54 @@ bg-size-80{
 
     .sm-padded-img { padding: 5% 15% 0% 15%;}
 
-   
+   /* Markdown - Styles */
+   .md-style h1 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: none;
+  }
+  
+  /* nicht verändern */
+  .md-style h2 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 1.8rem;
+    text-transform: none;
+  }
+  
+  /* nicht verändern */
+  .md-style h3 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: none;
+  }
+  
+  /* nicht verändern */
+  .md-style h4 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+    text-transform: none;
+  }
+  
+  /* für listen */
+  .md-style h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .md-style h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: none;
+  }
+  
+  .md-style p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
 }

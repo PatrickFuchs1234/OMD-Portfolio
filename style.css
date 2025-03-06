@@ -151,10 +151,8 @@ p a:hover {
   font-size: 1.5rem;
 }
 
-/* suggested additional styles 
-- .button-inverted, .button-subtle, .button-lg  */
-
-
+.fa-angles-right {font-size: 1.1rem;}
+.fa-angles-left {font-size: 1.2rem;}
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
 .bg-dark     { background-color: var(--dark);}
@@ -729,25 +727,26 @@ bg-size-80{
 }
 
 .slick-next {
-  right: 10px;
+  right: -5px;
 }
 
 .slick-prev {
-  left: 10px;
+  left: -5px;
 }
+
+.slick-next, .slick-prev { top: 48%;}
 
 .slick-next::before, .slick-prev::before {
     font-family: inherit;
     font-size: 20px;
     line-height: 1;
     opacity: .75;
-    color: rgb(90,90,90);
+    color: var(--featured);
 }
 
 .slick-dots {
   left: 0;
-  bottom: 10px;
-  /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+  bottom: 20px;
 }
 
 .slick-dots li,
@@ -756,11 +755,11 @@ bg-size-80{
 }
 
 .slick-dots li button::before {
-  color: teal;
+  color: var(--featured);
 }
 
 .slick-dots li.slick-active button::before {
-  color: teal; 
+  color: var(--featured); 
 }
 
 
@@ -885,6 +884,9 @@ bg-size-80{
   vertical-align: top;
 }
 
+.order-1 {order: 1;}
+.order-2 {order: 2;}
+
 /* ------------------ MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
@@ -922,6 +924,8 @@ bg-size-80{
   .sm-padded-0     { padding: 0%; }
   .sm-padded-1   { padding: 1rem; }
   .sm-padded-05  { padding: 0.5rem; }
+  .sm-padded-img { padding: 0 0 0 5%;}
+  
 
   .sm-padded-t-0 { padding-top: 0; }
   .sm-padded-b-0 { padding-bottom: 0; }
@@ -940,6 +944,9 @@ bg-size-80{
   h2{ font-size: 3rem;}
   h4{ font-size: 1rem;}
   h6{ font-size: 0.7rem;}
+
+  .fa-angles-right {font-size: 0.9rem;}
+  .fa-angles-left {font-size: 1rem;}
 
   .overlay-heading {
     position: absolute;
@@ -960,7 +967,9 @@ bg-size-80{
   .slick-prev {left: -10px; }
   .slick-next {right: -10px; }
   .slick-dots { bottom: -10px; }
-  
+
+  .order-1 {order: 2;}
+  .order-2 {order: 1;}
 
 }
 
@@ -987,7 +996,6 @@ bg-size-80{
     h1{ font-size: 3rem; }
     h2{ font-size: 2.5rem;}
     h3{ font-size: 1.8rem;}
-    h4{ font-size: 1rem;}
     h5{ font-size: 0.6rem;}
     h6{ font-size: 0.6rem;}
 
@@ -1000,11 +1008,15 @@ bg-size-80{
       text-align: left;
     }
 
-    p{  font-size: 0.8rem;}
+    p{  font-size: 1rem;}
 
     .xs-border-b {
       border-bottom: 2px solid var(--dark);
     }
 
     .xs-vh30{ min-height: 30vh;}
+
+    .sm-padded-img { padding: 5% 15% 0% 15%;}
+
+   
 }

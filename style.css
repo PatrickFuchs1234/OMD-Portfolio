@@ -243,103 +243,6 @@ p a:hover {
 
 .zind5{ z-index: 5;}
 
-/* ------------------ Header & Hamburger Menu ---------------------- */
-/* header {
-    padding: 1rem 5%;
-} */
-
-nav a {
-    padding: 0.25rem 0.5rem;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-nav a:hover {
-  color: var(--featured-text);
-}
-
-.logo {
-  text-decoration: none;
-  font-size: 2.5rem;
-} 
-
-/* Dropdown styles */
-
-.dropdown { 
-  position: relative; 
-  display: inline-block;
-  border: 1px solid orange;
-}
-
-.dropdown-title {
-  padding: 0.25rem 0.5rem;
-  display: inline-block;
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: -1rem;
-  padding: 0.5rem;
-  display:none; 
-  background-color: white;
-  z-index: 2;
-  text-align: left;
-  min-width: 10rem;
-  border: 1px solid mediumvioletred;
-}
-
-.dropdown:hover .dropdown-content{ 
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 0.2rem;
-}
-
-.hamburger-button {
-    cursor: pointer;
-    padding: 0.5rem;
-    display: inline-block;
-    font-weight: 200;
-    font-size: 2.5rem;
-    line-height: 0.8;
-    position: fixed;
-    right: 5%;
-    top: 0rem;
-    z-index: 4;
-  }
-  
-  /* Styles when the hamburger button is active  */
-  .hamburger-button.active {
-    color: white;
-  }
-  
-  
-  .mobile-menu {
-    display: none; 
-    background-color: var(--featured);
-    padding: 5%;
-    position: fixed; 
-    z-index:3;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  
-  .mobile-menu a {
-    text-decoration: none; 
-    color: inherit; 
-    padding: 2%;
-    display: block;
-    font-weight: normal;
-  }
-
-
-
 /* ------------------------- Contact Forms  --------------------------- */
             
               
@@ -537,14 +440,20 @@ form .button:hover {
   right: 0.1rem;
 }
 
+/* ------------------ Header & Hamburger Menu ---------------------- */
+
 /* -------------------- Hompage  ------------------------------------- */
 
 .relative{
   position: relative;
 }
+.absolute{
+  position: absolute;
+  width: 90%;
+}
 
-/* heading */
-.overlay-heading {
+/* ------------------  heading --------------- */
+.memory {
   position: absolute;
   left: 15.7rem;
   top: auto;
@@ -562,6 +471,7 @@ form .button:hover {
 }
 
 .img-head{
+  position: relative;
   width: 15rem;
   height: 20rem;
   z-index: 0;
@@ -773,10 +683,10 @@ bg-size-80{
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
 
-.capped-width-wide      { max-width: 1400px; margin: auto; }
-.capped-width           { max-width: 1000px; margin: auto; }
-.capped-width-narrow    { max-width: 800px; margin: auto; }
-.capped-width-v-narrow  { max-width: 600px;  margin: auto; }
+.capped-width-wide      { max-width: 1400px; margin: auto; overflow: hidden;}
+.capped-width           { max-width: 1000px; margin: auto; overflow: hidden;}
+.capped-width-narrow    { max-width: 800px; margin: auto; overflow: hidden;}
+.capped-width-v-narrow  { max-width: 600px;  margin: auto; overflow: hidden;}
 
 .vh110 { min-height: 110vh;}
 .vh100 { min-height: 100vh;}
@@ -799,6 +709,7 @@ bg-size-80{
 .padded-2  { padding: 2rem; }
 
 .padded-t  { padding-top: 5%; }
+.padded-t-xl { padding-top: 15%; }
 .padded-b  { padding-bottom: 5%; }
 .padded-l  { padding-left: 5%; }
 .padded-r  { padding-right: 5%; }
@@ -893,10 +804,12 @@ bg-size-80{
 	.md-show { display: block; }
 	.md-hide { display: none;  }
 
+  .md-padded-l { padding-left: 5%; }
+
   h1{ font-size: 6rem;}
   h6{ font-size: 0.8rem;}
 
-  .overlay-heading {
+  .memory {
     position: absolute;
     left: 13.5rem;
     top: auto;
@@ -924,6 +837,7 @@ bg-size-80{
   .sm-padded-05  { padding: 0.5rem; }
 
   .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-t-xl { padding-top: 15%; }
   .sm-padded-b-0 { padding-bottom: 0; }
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
@@ -941,7 +855,7 @@ bg-size-80{
   h4{ font-size: 1rem;}
   h6{ font-size: 0.7rem;}
 
-  .overlay-heading {
+  .memory {
     position: absolute;
     left: 12rem;
     top: auto;
@@ -984,14 +898,14 @@ bg-size-80{
       font-family: 'Martel', serif; 
     }
 
-    h1{ font-size: 3rem; }
+    h1{ font-size: 4rem; }
     h2{ font-size: 2.5rem;}
     h3{ font-size: 1.8rem;}
     h4{ font-size: 1rem;}
     h5{ font-size: 0.6rem;}
     h6{ font-size: 0.6rem;}
 
-    .overlay-heading {
+    .memory {
       position: absolute;
       left: 8.6rem;
       top: auto;

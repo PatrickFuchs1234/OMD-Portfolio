@@ -388,8 +388,8 @@ form .button:hover {
   padding: 2rem;
   text-align: center;
   position: fixed;
-  left: 52rem;
-  bottom: 0.5rem;
+  right: 1rem;
+  bottom: 1rem;
   width: 30%;
   background: var(--featured);
   color: var(--v-light);
@@ -577,7 +577,6 @@ bg-size-80{
 
 .margin-timeline{
   margin-top: -6rem;
-  margin-bottom: -6rem;
 }
 
 /* ----------Section Banner--------- */
@@ -838,13 +837,18 @@ bg-size-80{
     bottom: 1.8rem;
     width: 70px;
     text-align: left;
-}
+  }
 
-.md-vh90{ min-height: 90vh;}
-.md-vh80{ min-height: 80vh;}
-.md-vh60{ min-height: 60vh;}
-.md-vh50{ min-height: 50vh;}
-.md-vh40{ min-height: 40vh;}
+  .md-vh90{ min-height: 90vh;}
+  .md-vh80{ min-height: 80vh;}
+  .md-vh60{ min-height: 60vh;}
+  .md-vh50{ min-height: 50vh;}
+  .md-vh40{ min-height: 40vh;}
+
+  #cookie-notice {
+    width: 50%;
+  }
+}
 
 /* ------------------- SM Media Query (48em / 768px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
@@ -1008,6 +1012,10 @@ bg-size-80{
     .xs-vh30{ min-height: 30vh;}
 
     .sm-padded-img { padding: 5% 15% 0% 15%;}
+
+    #cookie-notice {
+      width: calc(100% - 2rem);
+    }
 
    /* Markdown - Styles */
    .md-style h1 {

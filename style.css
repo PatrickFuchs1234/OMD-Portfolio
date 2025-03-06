@@ -554,13 +554,17 @@ form .button:hover {
 
 /* -------------------- Hompage  ------------------------------------- */
 
+.relative{
+  position: relative;
+}
+
 /* heading */
 .overlay-heading {
   position: absolute;
-  left: 1.8rem;
+  left: 11.1rem;
   top: auto;
   bottom: 1rem;
-  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
+  width: 70px;
   text-align: left;
 }
 
@@ -890,6 +894,15 @@ bg-size-80{
 	.md-hide { display: none;  }
 
   h1{ font-size: 6rem;}
+  h6{ font-size: 0.8rem;}
+
+  .overlay-heading {
+    position: absolute;
+    left: 8.9rem;
+    top: auto;
+    bottom: 0.3rem;
+    width: 70px;
+    text-align: left;
 
 }
 

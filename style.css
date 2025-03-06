@@ -554,6 +554,16 @@ form .button:hover {
 
 /* -------------------- Hompage  ------------------------------------- */
 
+/* heading */
+.overlay-heading {
+  position: absolute;
+  left: 1.8rem;
+  top: auto;
+  bottom: 1rem;
+  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
+  text-align: left;
+}
+
 /* ----------Section Timeline--------- */
 
 .border-r{
@@ -683,15 +693,6 @@ bg-size-80{
   font-weight: 400; 
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.overlay-banner2 {
-  position: absolute;
-  left: 1.8rem;
-  top: auto;
-  bottom: 1rem;
-  width: 100vh; /* Gleiche Breite wie die Höhe der Section */
-  text-align: left;
 }
 
 /* Typography Styles */

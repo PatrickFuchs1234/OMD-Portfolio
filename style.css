@@ -20,12 +20,13 @@ section {
 /* ------------------------ CSS Variables ------------------------------- */
 :root {
   --dark: #112c36;
-  --featured: #284177;
-  --medium: #006BBD;
+  --featured: #507585;
+  --medium: #83a5b4;
   --light: #CCDAE0;
   --v-light: #f1f5f6;
   --light-text: #EDE8E4;
-  --featured-text: #284177;
+  --featured-text: #507585;
+  --dark-text: #1d1d1d;
 }
 
 
@@ -374,7 +375,7 @@ form textarea {
 form input:focus,
 form textarea:focus {
   outline: none;
-  border-color: var(--featured);
+  border-color: var(--medium);
 }
 
 textarea {
@@ -408,7 +409,7 @@ form .button {
 }
 
 form .button:hover {
-  border: 2px solid var(--featured);
+  border: 2px solid var(--medium);
 }
 
 /* ------------ Markdown Styles -------------  */

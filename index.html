@@ -1,6 +1,17 @@
 ---
 layout: default
 title: Home
+projects:
+ - image: zen-studio.webp
+   link: https://zen-studio.onememorydesign.com
+ - image: negroni-bar.webp
+   link: https://negroni-bar.onememorydesign.com
+ - image: the-bunker.webp
+   link: https://the-bunker.onememorydesign.com
+ - image: cabin2.png
+   link: https://cabin.onememorydesign.com
+ - image: tentvillage.png
+   link: https://thetentvillage.onememorydesign.com
 seo:
   title: Home | OnememoryDesign.
   description: Website Design and Development by OnememoryDesign.
@@ -12,11 +23,11 @@ seo:
 <!--------------------- Heading Section ----------------------->
 <section class="padded capped-width vh90">
 
-  <div class="left relative zind5">
-    <h1>One Design.</h1>
-    <div class="text-turn-270 overlay-heading">
+  <div>
+    <h1 class="left zind5">One Design.</h1>
+    <div class="text-turn-90 overlay-heading xs-hide">
 
-      <h6>Memory</h6>
+      <h5>Memory</h5>
   
     </div>
   </div>
@@ -36,7 +47,7 @@ seo:
 
   <div class="col-12-middle grid capped-width">
     <div class="col-6-middle_sm-10_xs-12 padded">
-      <h6>OnememoryDesign.</h6>
+      <h5>OnememoryDesign.</h5>
       <h3>Website design & development.</h3>
       <p>We specialize in creating captivating digital experiences that resonate with your audience and drive results. </p>
       <p>From intuitive user interfaces to robust backend development, we ensure every aspect of your website is crafted for optimal performance across all devices.</p>
@@ -156,7 +167,6 @@ seo:
 </section>
 
 <!-----------------------Section Banner ----------------------------->
-
 <section class="grid padding bg-light vh60 sm-vh50 main">
   <div class="col-12-middle center padded">
       <h2>Unlock your digital potential </h2>
@@ -220,51 +230,26 @@ seo:
 <section class="bg-v-light">
   <div class="padded capped-width xs-hide">
     <div class="padded-t">
-      <div class="">
+      <div>
         <h2>Latest Projects</h2>
       </div>
 
+      <div class="slider-container"> 
 
-    <div class="slider-container"> 
-      <div class="slider-item"> 
-        <a href="https://zen-studio.onememorydesign.com" target="_blank">
-        <div class="bg-image square" style="background-image: url('/images/demo-projects/zen-studio.webp');"></div>
-        <!--     <p class="caption"> This is Nala </p>   -->
-        </a>
-      </div> 
-      <div class="slider-item">
-        <a href="https://the-bunker.onememorydesign.com" target="_blank">
-        <div class="bg-image square" style="background-image: url('/images/demo-projects/the-bunker.webp');"></div>
-        <!--     <p class="caption"> This is Houdini </p>   -->
-        </a>
-      </div> 
-      <div class="slider-item">
-        <a href="https://negroni-bar.onememorydesign.com" target="_blank">
-        <div class="bg-image square" style="background-image: url('/images/demo-projects/negroni-bar.webp');"></div>
-        <!--     <p class="caption"> This is Nala </p>   -->
-        </a>
-      </div> 
-      <div class="slider-item">
-        <a href="https://cabin.onememorydesign.com" target="_blank">
-        <div class="bg-image square" style="background-image: url('/images/demo-projects/cabin2.png');"></div>
-        <!--     <p class="caption"> This is Houdini </p>   -->
-        </a>
-      </div> 
-      <div class="slider-item">
-        <a href="https://thetentvillage.onememorydesign.com" target="_blank">
-        <div class="bg-image square" style="background-image: url('/images/demo-projects/tentvillage.png');"></div>
-        <!--     <p class="caption"> This is Houdini </p>   -->
-        </a>
-      </div> 
-    </div>
-  </div>
+      {% for project in page.projects %}
 
-  
+        <div class="slider-item"> 
+          <a href="{{project.link}}" target="_blank">
+          <div class="bg-image square" style="background-image: url('/images/demo-projects/{{project.image}}');"></div>
+          </a>
+        </div> 
+
+      {% endfor %}
+      </div>
 
 </section>
 
 <!-----------------------Section Banner ----------------------------->
-
 <section class="grid padding bg-light vh50 sm-vh40 xs-vh30 main">
   <div class="col-12-middle center padded">
       <h2>Optimized for every device</h2>
@@ -278,9 +263,7 @@ seo:
 
 </section>
 
-<!----------------------- Contact Form ----------------------------->
-            
-              
+<!----------------------- Contact Form ----------------------------->           
 <section class="padded xs-padded-lg capped-width">
 
   <div class="padded center">

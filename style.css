@@ -512,10 +512,10 @@ form .button:hover {
 .border-hr-1{
   border: 0.5px solid var(--dark);
 }
-.border-r-sm{
-  border-right: 1px solid var(--dark);
+.border-l{
+  border-left: 1px solid var(--dark);
   opacity: 60%; 
-  margin-right: 0.5rem;
+  margin-left: 5%;
 }
 
 hr {

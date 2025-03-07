@@ -20,7 +20,7 @@ function updateContentToGerman() {
   document.getElementById('service1').innerText = "In enger Zusammenarbeit mit Ihnen gestalten wir eine Website, die Ihre Marke stärkt und echte Ergebnisse liefert. Mit unserer Erfahrung stellen wir sicher, dass jede Seite intuitiv, technisch stabil und für alle Geräte optimiert ist.";
   document.getElementById('service2').innerText = "Vom ersten Entwurf bis zur finalen Umsetzung – wir sorgen dafür, dass Ihre Website in jeder Hinsicht überzeugt.";
   document.getElementById('custom-design').innerText = "Indivdiuelles Design";
-  document.getElementById('coding').innerText = "Effiziente Programmierung";
+  document.getElementById('remote').innerText = "";
   document.getElementById('mobile').innerText = "Responsive Design";
   document.getElementById('seo').innerText = "SEO-optimiert";
   document.getElementById('fast').innerText = "Schnell";
@@ -65,7 +65,7 @@ function updateContentToEnglish() {
   document.getElementById('service1').innerText = "We specialize in creating captivating digital experiences that resonate with your audience and drive results.";
   document.getElementById('service2').innerText = "From intuitive user interfaces to robust backend development, we ensure every aspect of your website is crafted for optimal performance across all devices.";
   document.getElementById('custom-design').innerText = "Custom Design";
-  document.getElementById('coding').innerText = "Smart Code";
+  document.getElementById('remote').innerText = "Fully Remote";
   document.getElementById('mobile').innerText = "Mobile-friendly";
   document.getElementById('seo').innerText = "SEO-optimized";
   document.getElementById('fast').innerText = "Lightning Fast";

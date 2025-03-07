@@ -20,7 +20,20 @@ seo:
   hide-from-google: false
 ---
 
-<!--------------------- Heading Section ----------------------->
+<!--------------------- DESKTOP HEADER ----------------------->
+<header class="xs-hide">
+<section class="grid-middle padded-t-2">
+  <div class="col-2"></div>
+  <div class="col-8 center">
+      <a href="/"><h5>Webdesign & Webdevelopment</h5></a>
+  </div>
+  <!-- Language Switch Button -->
+  <div class="col-2 right">
+      <div style="display: inline;"><i class="fa-solid fa-globe switch" id="switch"></i></div>
+      <button id="language-toggle" class="language-toggle">EN | DE</button>
+  </div>
+</section>
+
 <section class="relative padded capped-width vh90 md-vh80 sm-padded-t-xl xs-hide">
 
   <div class="absolute zind5">
@@ -39,9 +52,26 @@ seo:
   <div class="overlay-head">
     <div class="bg-image img-head" style="background-image: url('/images/laptop.webp');"></div>
   </div>
+  
 </section>
 
-<!-- Media XS -->
+</header>
+
+
+<!--------------------  XS  HEADER ----------------->
+<header class="xs-show">
+
+<section class="grid-middle padded-2">
+  <div class="col-9">
+      <a href="/"><h5>OnememoryDesign.</h5></a>
+      
+  </div>
+  <!-- Language Switch Button -->
+  <div class="col-3 right">
+      <div style="display: inline;"><i class="fa-solid fa-globe switch" id="switch"></i></div>
+      <button id="language-toggle" class="language-toggle">EN | DE</button>
+  </div>
+</section>
 <section class="relative padded padded-t-xl capped-width vh70 xs-show">
   <div class="absolute zind5">
     <h1 class="center" style="margin-right: 12rem;">Concept</h1>
@@ -52,13 +82,18 @@ seo:
     <div class="bg-image img-head bg-overlay" style="background-image: url('/images/laptop.webp');"></div>
   </div>
 </section>
+<div class="grid">
+  <div class="col-12-bottom right">
+    <h5 class="padded">Webdesign & Development.</h5>
+  </div>
+</div>
+</header>
 
 <!---------------------- Service Section -------------------------->
 <section class="grid padded xs-padded bg-light vh80 sm-vh60">
 
   <div class="col-12-middle grid capped-width">
     <div class="col-6-middle_sm-10_xs-12 padded">
-      <h5>OnememoryDesign.</h5>
       <h3>Website Design & Development.</h3>
       <p id="service1">We specialize in creating captivating digital experiences that resonate with your audience and drive results. </p>
       <p id="service2">From intuitive user interfaces to robust development, we ensure every aspect of your website is crafted for optimal performance across all devices.</p>
@@ -70,7 +105,7 @@ seo:
       </div>
       <hr class="margin-lr">
       <div class="padded-1 margin-0">
-        <h4 id="coding">Smart Code</h4>
+        <h4 id="remote">Fully Remote</h4>
       </div>
       <hr class="margin-lr">
       <div class="padded-1 margin-0">

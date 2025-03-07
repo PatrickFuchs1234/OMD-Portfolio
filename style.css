@@ -72,8 +72,8 @@ h4 { font-size: 1.2rem;
 h5 { font-size: 0.9rem;
      font-weight: 300; 
      text-transform: uppercase;}
-h6 { font-size: 1rem; 
-     font-weight: 300;
+h6 { font-size: 0.9rem; 
+     font-weight: 250;
      text-transform: uppercase;
 }
 
@@ -153,20 +153,21 @@ p a:hover {
   font-size: 1.5rem;
   z-index: 100;
   position: absolute;
-  top: 26px;
-  right: 103px;
+  top: 1.7rem;
+  right: 6.5rem;
 }
 
 .language-toggle {
   position: absolute;
   z-index: 100;
-  top: 20px;
-  right: 20px;
+  top: 1.3rem;
+  right: 1.5rem;
   background-color: var(--light);
   border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.9rem;
+  font-weight: 200;
   border-radius: 5px;
 }
 
@@ -475,7 +476,7 @@ form .button:hover {
   position: absolute;
   left: 15.7rem;
   top: auto;
-  bottom: 1.9rem;
+  bottom: 2.1rem;
   width: 70px;
   text-align: left;
 }
@@ -887,16 +888,16 @@ bg-size-80{
   h1{ padding: 0 2rem; font-size: 4.5rem;}
   h2{ font-size: 3rem;}
   h4{ font-size: 1rem;}
-  h6{ font-size: 0.7rem;}
+  h6{ font-size: 0.6rem;}
 
   .fa-angles-right {font-size: 0.9rem;}
   .fa-angles-left {font-size: 1rem;}
 
   .memory {
     position: absolute;
-    left: 12rem;
+    left: 11.8rem;
     top: auto;
-    bottom: 1.1rem;
+    bottom: 1.3rem;
     width: 70px;
     text-align: left;
   }

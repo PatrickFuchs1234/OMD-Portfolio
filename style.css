@@ -342,6 +342,7 @@ form .button:hover {
 
 .md-style p {
   line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 /* ------------ Cookie banner Styles  ----------------------- */
@@ -819,24 +820,14 @@ bg-size-80{
   .sm-text-left   { text-align: left; }
   .sm-text-right  { text-align: right; }
 
-  .sm-padded     { padding: 5%; }
-  .sm-padded-0     { padding: 0%; }
-  .sm-padded-1   { padding: 1rem; }
-  .sm-padded-05  { padding: 0.5rem; }
   .sm-padded-img { padding: 0 0 0 5%;}
-  
-
-  .sm-padded-t-0 { padding-top: 0; }
   .sm-padded-t-xl { padding-top: 15%; }
-  .sm-padded-b-0 { padding-bottom: 0; }
-  .sm-margin-t-0 { margin-top: 0; }
+
   .sm-margin-b-0 { margin-bottom: 0; }
   .sm-margin-t-1 {margin-top: 1rem; }
   .sm-margin-b-1 { margin-bottom: 1rem; }
-  .sm-margin-t-neg3 { margin-top: -3rem; }
 
   .sm-landscape     { padding-bottom: 66% ; }
-  .sm-portrait-tall { padding-bottom: 175%; }
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
@@ -849,16 +840,10 @@ bg-size-80{
   .fa-angles-left {font-size: 1rem;}
 
   .memory {
-    position: absolute;
     left: 11.8rem;
-    top: auto;
     bottom: 1.3rem;
-    width: 70px;
-    text-align: left;
   }
 
-  .sm-vh90{ min-height: 90vh;}
-  .sm-vh80{ min-height: 80vh;}
   .sm-vh60{ min-height: 60vh;}
   .sm-vh50{ min-height: 50vh;}
   .sm-vh40{ min-height: 40vh;}
@@ -868,45 +853,29 @@ bg-size-80{
   .slick-next {right: -10px; }
   .slick-dots { bottom: -10px; }
 
-  .order-1 {order: 2;}
-  .order-2 {order: 1;}
+/* SM - Markdown - Styles */
+  .md-style h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
 
-/* Markdown - Styles */
-.md-style h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 2.4rem;
-  text-transform: none;
-}
+  .md-style h2 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
 
-/* nicht verändern */
-.md-style h2 {
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  margin-top: 1.8rem;
-  text-transform: none;
-}
+  .md-style h3 {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
 
-/* nicht verändern */
-.md-style h3 {
-  font-weight: 400;
-  font-size: 1.6rem;
-  text-transform: none;
-}
+  .md-style h4 {
+    font-weight: 400;
+  }
 
-/* nicht verändern */
-.md-style h4 {
-  font-weight: 400;
-  font-size: 1.4rem;
-  margin-top: 1.8rem;
-  text-transform: none;
-}
-
-.md-style p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
+  .md-style p {
+    font-size: 1rem;
+  }
 
 
 }
@@ -921,28 +890,16 @@ bg-size-80{
 
     .xs-padded     { padding: 7%; }
     .xs-padded-lg    { padding: 10%; }  
-    .xs-padded-1   { padding: 1rem; }
-    .xs-padded-05  { padding: 0.5rem; }
 
     .xs-padded-t10 {padding-top: 10%;}
-
-    .xs-subtle-heading {
-      font-weight: 300;
-      font-family: 'Martel', serif; 
-    }
 
     h1{ font-size: 4rem; }
     h2{ font-size: 2.5rem;}
     h3{ font-size: 1.8rem;}
-    h6{ font-size: 0.6rem;}
 
     .memory {
-      position: absolute;
       left: 8.6rem;
-      top: auto;
       bottom: 0.5rem;
-      width: 70px;
-      text-align: left;
     }
 
     .xs-border-b {
@@ -957,41 +914,12 @@ bg-size-80{
       width: calc(100% - 2rem);
     }
 
-   /* Markdown - Styles */
+   /* XS - Markdown - Styles */
    .md-style h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
     font-size: 1.4rem;
-    text-transform: none;
   }
   
-  /* nicht verändern */
   .md-style h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     font-size: 1.6rem;
-    margin-top: 1.8rem;
-    text-transform: none;
   }
-  
-  /* nicht verändern */
-  .md-style h3 {
-    font-weight: 400;
-    font-size: 1.6rem;
-    text-transform: none;
-  }
-  
-  /* nicht verändern */
-  .md-style h4 {
-    font-weight: 400;
-    font-size: 1.4rem;
-    margin-top: 1.8rem;
-    text-transform: none;
-  }
-  
-  .md-style p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
 }

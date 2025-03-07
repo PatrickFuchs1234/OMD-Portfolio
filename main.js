@@ -1,4 +1,3 @@
-
 $('.slider-container').slick({
   autoplay: true,        // Do we want it to autoplay? true or false
 	autoplaySpeed: 2000,   // How long between each slide when autoplaying

@@ -650,19 +650,11 @@ hr {
   h6{ font-size: 0.8rem;}
 
   .memory {
-    position: absolute;
     left: 15.8rem;
-    top: auto;
     bottom: 1.8rem;
-    width: 70px;
-    text-align: left;
   }
 
-  .md-vh90{ min-height: 90vh;}
   .md-vh80{ min-height: 80vh;}
-  .md-vh60{ min-height: 60vh;}
-  .md-vh50{ min-height: 50vh;}
-  .md-vh40{ min-height: 40vh;}
 
   #cookie-notice {
     width: 50%;
@@ -680,8 +672,6 @@ hr {
 	.sm-hide { display: none;  }
 
   .sm-text-center { text-align: center; }
-  .sm-text-left   { text-align: left; }
-  .sm-text-right  { text-align: right; }
 
   .sm-padded-img { padding: 0 0 0 5%;}
   .sm-padded-t-xl { padding-top: 15%; }

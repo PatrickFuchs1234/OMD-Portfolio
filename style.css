@@ -168,13 +168,6 @@ p a:hover {
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
-.bg-image-icons {
-    background-color: var(--light);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-}
-
 .bg-image {
   background-color: var(--light); /* Set a fall-back color while images are loading */ 
   background-size: cover;
@@ -185,18 +178,8 @@ p a:hover {
 
 /* Aspect Ratios */
 .landscape     { padding-bottom: 66% ; }
-.landscape-wide { padding-bottom: 56%; }
-.portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; border-radius: 15px; }
-
-
-/* Background Position */
-.bg-pos-t { background-position: top; }
-.bg-pos-b { background-position: bottom; }
-.bg-pos-l { background-position: left; }
-.bg-pos-r { background-position: right; }
-
 
 /* Overlay */
 .bg-overlay::after {
@@ -210,34 +193,12 @@ p a:hover {
   background-color: rgba(255, 255, 255, 0.55);
 }
 
-
 .bg-overlay > * {
   z-index: 2;
   position: relative;
 }
-/* Add a second class to change the color or style  */
-
-.bg-overlay-gradient::after { 
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-} 
-
-.bg-overlay-featured::after { 
-  background-color: var(--light);
-  opacity: 0.5;
-}
-
-.bg-overlay::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* Unter den Inhalt, aber über das Bild */
-}
 
 /* overlay one element above the other in the head section */
-
 .main{
   position: relative;
   display: flex;
@@ -248,9 +209,7 @@ p a:hover {
 
 .zind5{ z-index: 5;}
 
-/* ------------------------- Contact Forms  --------------------------- */
-            
-              
+/* ------------------------- Contact Forms  --------------------------- */          
 form input, 
 form textarea {
   margin: 1rem 0rem;
@@ -281,12 +240,9 @@ input[type="submit"] {
 }
 
 form label {
-  /* margin-top: 1rem; */
   font-family: inherit;
   font-weight: 0.9rem;
   display: block;
-  /* color: var(--featured);
-  font-weight: bold; */
 }
 
 form .button {
@@ -308,7 +264,6 @@ form .button:hover {
 }
 
 /* ------------ Markdown Styles -------------  */
-
 .md-style h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -346,7 +301,6 @@ form .button:hover {
 }
 
 /* ------------ Cookie banner Styles  ----------------------- */
-
 #cookie-notice {
   display: none;
   padding: 2rem;
@@ -422,10 +376,7 @@ form .button:hover {
   right: 0.1rem;
 }
 
-/* ------------------ Header & Hamburger Menu ---------------------- */
-
-/* -------------------- Hompage  ------------------------------------- */
-
+/*------- positions ---------*/
 .relative{
   position: relative;
 }
@@ -460,7 +411,6 @@ form .button:hover {
 }
 
 /* ----------Section Timeline--------- */
-
 .border-r{
   border-right: 2px solid var(--dark);
   z-index: 10;
@@ -484,28 +434,15 @@ hr {
     width: 100%;
 }
 
-bg-size-50{
-  background-size: 50%;
-}
-
-bg-size-80{
-  background-size: 80%;
-}
-
 .icon{
   font-size: 3rem;
   padding: 0.5rem;
 }
 
 .position-container {
-  position: relative; /* This ensures the fixed element is positioned relative to this div */
+  position: relative;
   display: flex;
   align-items: center;
-}
-
-.custom-hr {
-  width: 100%;
-  border: 1px solid #000;
 }
 
 .fixed-item-hr-l {
@@ -551,7 +488,6 @@ bg-size-80{
 }
 
 /* ----------Section Banner--------- */
-
 .text-turn-270{
   transform: rotate(270deg); 
   transform-origin: left bottom;
@@ -560,14 +496,6 @@ bg-size-80{
 .text-turn-90{
   transform: rotate(90deg); 
   transform-origin: right top;
-}
-
-.main{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 .overlay-lu {
@@ -584,16 +512,6 @@ bg-size-80{
   right: 0.9rem;
   top: 7.2rem;
   text-align: left;
-}
-
-.a-banner{
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.2;
-  margin-bottom: 1.2rem;
-  font-size: 0.8rem;
-  font-weight: 400; 
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* Slider */
@@ -648,21 +566,14 @@ bg-size-80{
 
 
 /* ------- Footer Styles --------- */
-
 #footer h4{
   font-size: 1.2rem;
   margin: 0.5rem;
 }
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
-
-.capped-width-wide      { max-width: 1400px; margin: auto; overflow: hidden;}
 .capped-width           { max-width: 1000px; margin: auto; overflow: hidden;}
-.capped-width-narrow    { max-width: 800px; margin: auto; overflow: hidden;}
-.capped-width-v-narrow  { max-width: 600px;  margin: auto; overflow: hidden;}
 
-.vh110 { min-height: 110vh;}
-.vh100 { min-height: 100vh;}
 .vh90  { min-height: 90vh; }
 .vh80  { min-height: 80vh; }
 .vh70  { min-height: 70vh; }
@@ -672,81 +583,33 @@ bg-size-80{
 .vh30  { min-height: 30vh; }
 
 /* Padding Utility Classes */ 
-.padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
 
 .padded-0  {padding: 0;}
-.padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
 
 .padded-t  { padding-top: 5%; }
 .padded-t-xl { padding-top: 15%; }
-.padded-b  { padding-bottom: 5%; }
 .padded-l  { padding-left: 5%; }
-.padded-r  { padding-right: 5%; }
-
 .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
-.padded-tb-0  { padding-top: 0%; padding-bottom: 0%; }
 .padded-lr  { padding-left: 5%; padding-right: 5%; }
 .padded-lr-1  { padding-left: 1rem; padding-right: 1rem; }
 
-.padded-t-1 { padding-top: 1rem; }
-.padded-b-1 { padding-bottom: 1rem; }
-.padded-l-1 { padding-left: 1rem; }
-.padded-r-1 { padding-right: 1rem; }
-
 .padded-t-2 { padding-top: 2rem; }
-.padded-b-2 { padding-bottom: 2rem; }
-.padded-l-2 { padding-left: 2rem; }
-.padded-r-2 { padding-right: 2rem; }
-
 .padded-t-0 { padding-top: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.padded-l-0 { padding-left: 0; }
-.padded-r-0 { padding-right: 0; }
 
 /* Margin Utility Classes */ 
-
 .margin-0 {margin: 0;}
+.margin-b-0 { margin-bottom: 0; }
 
-.margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
-.margin-l { margin-left: 5%; }
 .margin-r { margin-right: 5%; }
-
-.margin-t-05 { margin-top: 0.5rem; }
-.margin-b-05 { margin-bottom: 0.5rem; }
-.margin-l-05 { margin-left: 0.5rem; }
-.margin-r-05 { margin-right: 0.5rem; }
 
 .margin-t-1 { margin-top: 1rem; }
 .margin-b-1 { margin-bottom: 1rem; }
-.margin-l-1 { margin-left: 1rem; }
-.margin-r-1 { margin-right: 1rem; }
-
-.margin-t-2 { margin-top: 2rem; }
-.margin-b-2 { margin-bottom: 2rem; }
 .margin-l-2 { margin-left: 2rem; }
-.margin-r-2 { margin-right: 2rem; }
-
-.margin-t-3 { margin-top: 3rem; }
-.margin-b-5 { margin-bottom: 5rem; }
-
-.margin-t-0 { margin-top: 0; }
-.margin-b-0 { margin-bottom: 0; }
-.margin-l-0 { margin-left: 0; }
-.margin-r-0 { margin-right: 0; }
-
-.margin-b-neg {  margin-bottom: -1rem;  z-index: 10;}
-.margin-b-neg-3 {  margin-bottom: -3rem;  z-index: 10;}
-.margin-r-neg {  margin-right: -1rem;  z-index: 10;}
-.margin-t-neg-5 { margin-top: -5rem; }
-
-.margin-t-lg { margin-top: 10%; }
-.margin-t-xl { margin-top: 15%; }
-.margin-t-big {margin-top: 18%;}
 
 .margin-b-lg { margin-bottom: 10%; }
 

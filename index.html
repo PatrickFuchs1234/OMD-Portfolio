@@ -94,7 +94,7 @@ seo:
 
   <div class="col-12-middle grid capped-width">
     <div class="col-6-middle_sm-10_xs-12 padded">
-      <h3>Website Design & Development.</h3>
+      <h2>Website Design & Development.</h2>
       <p id="service1">We specialize in creating captivating digital experiences that resonate with your audience and drive results. </p>
       <p id="service2">From intuitive user interfaces to robust development, we ensure every aspect of your website is crafted for optimal performance across all devices.</p>
     </div>
@@ -187,7 +187,7 @@ seo:
   </div>
 </section>
 
-<section class="grid padded sm-show">
+<section class="grid padded sm-show" style="display: flex;">
   <div class="col-1 border-r-sm"></div>
   
   <div class="col-10">
@@ -218,8 +218,13 @@ seo:
       <!-- Calendly link widget begin -->
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
       <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/onememorydesign?hide_landing_page_details=1'});return false;"><h4 id="consultation"><i class="fa-solid fa-angles-left xs-hide"></i> get started with a free consultation <i class="fa-solid fa-angles-right"></i></h4></a>
+      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/onememorydesign?hide_landing_page_details=1'});return false;">
+          <!-- desktop -->
+          <h4 class="xs-hide" id="consultation"><i class="fa-solid fa-angles-left"></i> get started with a free consultation <i class="fa-solid fa-angles-right"></i></h4>
+          <!-- xs mobile -->
+          <h4 class="xs-show" id="consultation"></i> start with a free consultation <i class="fa-solid fa-angles-right"></i></h4>
       <!-- Calendly link widget end -->
+      </a>
   </div>
 
   <div class="text-turn-270 overlay-lu md-hide">
@@ -275,8 +280,8 @@ seo:
 <!----------------------- Latest Projects ----------------------------->
 <section class="bg-v-light">
   <div class="padded capped-width">
-    <div class="padded-t">
-      <div>
+    <div class="padded margin-t">
+      <div class="sm-text-center">
         <h2 id="projects">Latest Projects</h2>
       </div>
 
@@ -292,6 +297,10 @@ seo:
 
       {% endfor %}
       </div>
+
+    </div>
+  </div>
+
 
 </section>
 
@@ -310,7 +319,7 @@ seo:
 </section>
 
 <!----------------------- Contact Form ----------------------------->           
-<section class="padded xs-padded-lg capped-width">
+<section class="padded margin-tb capped-width">
 
   <div class="padded center">
     <h2 id="contact1">Send us a Message</h2>

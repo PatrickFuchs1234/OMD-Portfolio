@@ -95,12 +95,6 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-/* Unique Typography Styles  */
-.emphasis       { font-size: 1.2rem; }
-.featured-text  { color: var(--featured-text);}
-.light-text     { color: var(--light-text);}
-.subtle         { opacity: 0.8; margin-bottom: 0.2rem; }
-.subtitle       { font-size: 0.9rem; font-weight: 300;}
 .copyright     { opacity: 0.8; font-size: 0.9rem; text-decoration: none; padding: 0 5%;}
 
 /* ------------------------ Buttons & Links ------------------------ */
@@ -134,11 +128,6 @@ p a:hover {
 .button:hover {
   background-color: var(--v-light);
   color: var(--featured);
-}
-
-.subtle-button {
-  text-decoration: none;
-  border-bottom: 1px solid;
 }
 
 .social-icons{
@@ -176,10 +165,6 @@ p a:hover {
   background-color: var(--medium);
 }
 /* ------------ Backgrounds & Background Images  ----------------------- */
-
-.bg-dark     { background-color: var(--dark);}
-.bg-featured { background-color: var(--featured);}
-.bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 

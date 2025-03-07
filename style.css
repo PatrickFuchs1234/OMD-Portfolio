@@ -295,34 +295,8 @@ form .button:hover {
   text-transform: none;
 }
 
-/* für listen */
-.md-style h5 {
-  font-weight: 300;
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-
-.md-style h6 {
-  font-weight: 300;
-  font-size: 1.1rem;
-  text-transform: none;
-}
-
 .md-style p {
   line-height: 1.6;
-}
-
-.md-style hr {
-  margin: 5% 0;
-  border: none;
-  border: 1px solid #595946;
-}
-
-.md-style li{
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    margin-right: 5rem;
 }
 
 /* ------------ Cookie banner Styles  ----------------------- */
@@ -792,19 +766,6 @@ hr {
   text-transform: none;
 }
 
-/* für listen */
-.md-style h5 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-
-.md-style h6 {
-  font-weight: 400;
-  font-size: 1.1rem;
-  text-transform: none;
-}
-
 .md-style p {
   font-size: 1rem;
   line-height: 1.6;
@@ -888,19 +849,6 @@ hr {
     font-weight: 400;
     font-size: 1.4rem;
     margin-top: 1.8rem;
-    text-transform: none;
-  }
-  
-  /* für listen */
-  .md-style h5 {
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-bottom: 0.4rem;
-  }
-  
-  .md-style h6 {
-    font-weight: 400;
-    font-size: 1.1rem;
     text-transform: none;
   }
   

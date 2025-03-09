@@ -37,7 +37,7 @@ Marketing / tracking cookies are cookies or other forms of local storage used to
 ## 6. Placed Cookies  
 Our website uses only a functional cookie set by the cookie banner to store your cookie preferences:
 
-cookie_consent (Stores your cookie settings so that you are not asked again on each visit.)
+- cookie_consent (Stores your cookie settings so that you are not asked again on each visit.)
 
 ## 7. Consent
 When you first visit our website, we will show you a pop-up with a statement about cookies. Once you click "Save Settings," you give us your consent to use all the categories of cookies and plugins you have chosen, as described in this Cookie Policy. You can disable the use of cookies through your browser, but please note that our website may not function properly as a result. 

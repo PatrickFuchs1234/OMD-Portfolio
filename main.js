@@ -55,9 +55,16 @@ function eraseCookie(name) {
 }
 
 function runCookiedCodes() {
-  // Add tracking scripts here
-  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TTER589G1V');
-   // End tracking scripts
+// ---------------------- Add tracking scripts here ----------------------
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-J7H2CWH1P8');
+
+// ---------------------- End tracking scripts ----------------------
 
   console.log("cookies ran");
 }

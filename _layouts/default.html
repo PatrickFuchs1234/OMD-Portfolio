@@ -19,7 +19,6 @@
         <meta name="robots" content="index, follow">
     {% endif %}
 
-
     <!------------  Social media sharing META Tags ------------>
     <meta property="og:title" content="{{ page.title | default: site.data.site-settings.seo.title }}">
     <meta property="og:description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}"> 
@@ -35,6 +34,29 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="OMDesign." />
     <link rel="manifest" href="/images/icons/favicon/site.webmanifest" />
+
+    <!-- LD JSON für SEO -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OnememoryDesign",
+        "url": "https://onememorydesign.com",
+        "logo": "https://onememorydesign.com/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@onememorydesign.com",
+            "contactType": "Customer Service",
+            "areaServed": "Worldwide",
+            "availableLanguage": "English"
+        },
+        "sameAs": [
+            "https://www.instagram.com/onememory.design",
+            "https://www.facebook.com/profile.php?id=61572833130208",
+            "https://www.pinterest.com/onememorydesign/"
+        ]
+        }
+    </script>
 
     <!------------ External Stylesheets  ------------>
 
